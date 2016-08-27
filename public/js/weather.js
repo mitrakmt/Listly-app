@@ -1,25 +1,33 @@
 var findWeather = function (location) {
     return new Promise(function (resolve, reject) {
-      var weatherUrl = 'http://api.openweathermap.org/data/2.5/weather?q=' + location.city + '&units=imperial&appid=23ea43aa7b041f5ae63cf1c2847dfc27';
+      var weatherUrl = 'https://api.forecast.io/forecast/f641b11300cd05cd8d58926332895746/' + location.loc;
 
       if (!location) {
         return reject("There was an error in grabbing location");
       }
 
-      $.getJSON(weatherUrl, function(weatherInfo) {
+      var currentTime = moment().format("h");
 
+      $.getJSON(weatherUrl, function(weatherInfo) {
+        console.log(weatherInfo)
         var weatherIcon;
-        if (weatherInfo.weather[0].main === "Rain") {
+        if (weatherInfo.currently.icon.indexOf("rain") !== -1) {
           weatherIcon = "fa-umbrella"
-        } else if (weatherInfo.weather[0].main === "Clouds") {
+        } else if (weatherInfo.currently.icon.indexOf("storm") !== -1) {
+          weatherIcon = "fa-flash"
+        } else if (weatherInfo.currently.icon.indexOf("cloud") !== -1) {
           weatherIcon = "fa-cloud"
-        } else if (weatherInfo.wind.speed > 20) {
+        } else if (weatherInfo.currently.windspeed > 20) {
           weatherIcon = "fa-envira"
+        } else if (weatherInfo.currently.temperature < 60) {
+          weatherIcon = "fa-frost-o"
+        } else if (currentTime < 5 || currentTime >= 21) {
+          weatherIcon = "fa-moon-o"
         } else {
           weatherIcon = "fa-sun-o"
         }
 
-        $(".weather").append('<div class="col-md-5 weather-info weather-city"><h5>' + weatherInfo.name + '</h5></div><div class="col-md-5 weather-info"><h4>' + weatherInfo.main.temp + '°</h4><i class="fa ' + weatherIcon + ' fa-3x"></i></div>')
+        $(".weather").append('<div class="col-md-5 weather-info weather-city"><h5>' + location.city + '</h5></div><div class="col-md-5 weather-info"><h4>' + weatherInfo.currently.temperature + '°</h4><i class="fa ' + weatherIcon + ' fa-3x"></i><h6 class="weather-summary"><small>' + weatherInfo.currently.summary + '</small></h6></div>')
       });
     });
   }
