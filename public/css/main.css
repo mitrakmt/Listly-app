@@ -30,6 +30,7 @@ body {
 .navbar {
   top: 12px;
   padding-top: 15px;
+  opacity: .9;
 }
 
 .navbar .navbar-brand {
@@ -51,21 +52,40 @@ body {
 }
 
 #sidebar {
-  margin-top: 18px;
+  margin-top: 19px;
 }
 
 .list-group-item {
   border-radius: 5px;
-  margin: 5px;
+  margin: 4px;
+  width: 60px;
+}
+
+.list-group-item.active {
+  border-radius: 5px;
+}
+
+.list-group-item:first-child {
+  border-radius: 5px;
 }
 
 .bottom-jumbotron {
   padding: 20px !important;
+  margin-bottom: 0;
 }
 
 .weather-info {
-  margin-top: 10px;
   text-align: center;
+  margin-left: 40px;
+  margin-top: -5px;
+}
+
+.weather-info h4 {
+  text-align: center;
+}
+
+.icon i {
+  margin-top: 15px;
 }
 
 .weather-city {
@@ -75,5 +95,13 @@ body {
   width: 100%;
   border-radius: 5px 0 0 5px;
   margin: -20px -10px;
-  padding: 30px 20px 30px 10px;
+  padding: 30px 20px 35px 12px;
+}
+
+.news-title {
+  font-weight: bold;
+}
+
+.news-extras {
+  float: right;
 }

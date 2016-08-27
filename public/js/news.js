@@ -22,7 +22,9 @@ var getNews = function () {
           storyToDisplay.image = topStory.thread.main_image;
           storyToDisplay.replies = topStory.thread.replies_count;
 
-          $(".news").append("<p>" + storyToDisplay.author + ": " + storyToDisplay.title + "</p>")
+          $(".news-title").append('<a href="' + storyToDisplay.url + '" target="_blank">' + storyToDisplay.title + '</a>');
+          $(".news-text").append("<small>" + storyToDisplay.text + "</small>")
+          $(".news-extras").append('<small>Replies: ' + storyToDisplay.replies + '</small>')
           resolve(news);
         } else {
           reject(Error("Failed to grab stock quite information"));

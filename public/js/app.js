@@ -21,11 +21,11 @@ findUserWeather().then(function (userLocation) {
   console.log("You ran into an error!")
 });
 
-getStocks('AAPL').then(function (stock) {
-  console.log("Stock quote grabbed correctly");
-}, function(error) {
-  console.log(error);
-});
+// getStocks('AAPL').then(function (stock) {
+//   console.log("Stock quote grabbed correctly");
+// }, function(error) {
+//   console.log(error);
+// });
 
 getNews().then(function (news) {
   console.log("News grabbed correctly");
