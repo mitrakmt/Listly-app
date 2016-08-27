@@ -9,9 +9,3 @@ var locationUrl = 'https://ipinfo.io?token=50bf846b7258db';
         }
       }, "jsonp");
   });
-
-  // getLocation.then(function(result) {
-  //   console.log("Location worked correctly");
-  // }, function(error) {
-  //   console.log(error);
-  // });
