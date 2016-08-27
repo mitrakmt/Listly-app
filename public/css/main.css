@@ -1,5 +1,23 @@
 body {
   color: black;
+  background-image: url('https://source.unsplash.com/category/nature/1400x950');
+  /*images/van-background.jpeg*/
+}
+
+.container {
+  background-color: transparent;
+  opacity: .95;
+}
+
+.jumbotron {
+  background-color: white;
+  opacity: .9;
+}
+
+#todo-jumbotron {
+  margin-top: 30px;
+  height: 335px;
+  margin-bottom: 15px;
 }
 
 .vertical-center {
@@ -20,4 +38,42 @@ body {
 
 .navbar > * {
   width: 100%;
+}
+
+#fast-link a:hover {
+  background-color: white;
+  opacity: .9;
+  color: black;
+}
+
+.quick-link-text {
+  margin-top: 15px;
+}
+
+#sidebar {
+  margin-top: 18px;
+}
+
+.list-group-item {
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.bottom-jumbotron {
+  padding: 20px !important;
+}
+
+.weather-info {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.weather-city {
+  background-color: black;
+  color: white;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px 0 0 5px;
+  margin: -20px -10px;
+  padding: 30px 20px 30px 10px;
 }

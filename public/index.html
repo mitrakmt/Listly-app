@@ -6,6 +6,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/4.0.2/bootstrap-material-design.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
@@ -16,7 +17,7 @@
           ☰
         </button>
         <div class="collapse navbar-toggleable-xs" id="navbar-header">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">Listly</a>
           <ul class="nav navbar-nav">
             <li class="nav-item active">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -25,44 +26,84 @@
               <a class="nav-link" href="#">Features</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="#">About</a>
             </li>
           </ul>
-          <form class="form-inline pull-xs-right">
-            <input class="form-control" type="text" placeholder="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+          <form id="form" class="form-inline pull-xs-right" onsubmit="return false;">
+            <input class="form-control" type="text" id="urlSubmission" placeholder="yourwebsite.com/text">
+            <button class="btn btn-outline-success" type="submit" onclick="addUrlIcon();">Add link!</button>
           </form>
         </div>
-      </nav> <!-- /navbar -->
+      </nav>
+    </div>
 
-      <!-- Main component for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <h1>Navbar example</h1>
-        <ol class="weather">
+    <div class="container">
 
-        </ol>
-        <ol class="stocks">
+      <div class="row row-offcanvas row-offcanvas-right">
 
-        </ol>
+        <div class="col-xs-12 col-sm-9">
+          <div class="jumbotron"  id="todo-jumbotron">
+            <h1>Todo List</h1>
+
+            <ol class="stocks">
+
+            </ol>
+          </div>
+
+        </div>
+
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+          <div class="list-group" id="fast-link">
+
+          </div>
+        </div>
       </div>
+
+      <div class="row row-offcanvas row-offcanvas-right">
+
+        <div class="col-xs-12 col-sm-6 bottom-jumbotron">
+          <div class="jumbotron bottom-jumbotron">
+
+            <div class="row weather">
+              <!-- Weather will show here -->
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 bottom-jumbotron">
+          <div class="jumbotron bottom-jumbotron">
+            <h4>Today's Top Story</h4>
+            <ol class="news">
+              <!-- Top story shows here -->
+            </ol>
+          </div>
+
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>© Listly 2016</p>
+      </footer>
 
     </div>
 
-
     <!-- Latest compiled and minified JavaScript -->
     <script   src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.4/css/tether.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/4.0.2/bootstrap-material-design.umd.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.8/socket.io.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/2.14.1/moment.min.js"></script>
 
+    <script src="../js/news.js"></script>
     <script src ="../js/stocks.js"></script>
     <script src="../js/location.js"></script>
     <script src="../js/weather.js"></script>
+    <script src="../js/link-sidebar.js"></script>
     <script src="../js/app.js"></script>
   </body>
 </html>

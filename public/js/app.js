@@ -1,4 +1,7 @@
-//
+var flag = false;
+var url = "";
+var shortenedUrl = "";
+
 function findUserWeather () {
   return new Promise(function (resolve, reject) {
     var userLocation = getLocation;
@@ -20,6 +23,12 @@ findUserWeather().then(function (userLocation) {
 
 getStocks('AAPL').then(function (stock) {
   console.log("Stock quote grabbed correctly");
+}, function(error) {
+  console.log(error);
+});
+
+getNews().then(function (news) {
+  console.log("News grabbed correctly");
 }, function(error) {
   console.log(error);
 });
