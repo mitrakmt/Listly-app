@@ -1,0 +1,23 @@
+body {
+  color: black;
+}
+
+.vertical-center {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  top: 12px;
+  padding-top: 15px;
+}
+
+.navbar .navbar-brand {
+  padding-top: 10px;
+}
+
+.navbar > * {
+  width: 100%;
+}
