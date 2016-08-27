@@ -9,7 +9,6 @@ var findWeather = function (location) {
       var currentTime = moment().format("h");
 
       $.getJSON(weatherUrl, function(weatherInfo) {
-        console.log(weatherInfo)
         var weatherIcon;
         if (weatherInfo.currently.icon.indexOf("rain") !== -1) {
           weatherIcon = "fa-umbrella"
