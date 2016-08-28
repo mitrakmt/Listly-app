@@ -4,13 +4,15 @@ function addUrlIcon() {
     var $element = $('#fast-link');
     var numberOfChildren = $element.children().length;
 
-    if (url.indexOf(".com") === -1) {
+  {
+  if (url.indexOf(".com") === -1) {
       return;
       // Sorry this is not a valid URL
     } else if (numberOfChildren >= 5) {
       return;
       // Sorry you can't add any more quick links
     }
+}
 
     // no preseading url address
     if (url.indexOf("http") === -1 && url.indexOf("www") === -1) {

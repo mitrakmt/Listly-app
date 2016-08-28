@@ -40,16 +40,17 @@
     <div class="container">
 
       <div class="row row-offcanvas row-offcanvas-right">
-
         <div class="col-xs-16 col-sm-11">
           <div class="jumbotron"  id="todo-jumbotron">
-            <h1>Todo List</h1>
 
-            <ol class="stocks">
+            <!-- Todos -->
+            <form id="createAccountForm" class="form-inline pull-xs-right" onsubmit="return false;">
+              <input class="form-control" type="text" id="email-input" placeholder="email@example.com">
+              <input class="form-control" type="password" id="password-input" placeholder="Password">
+              <button class="btn btn-outline-success" type="submit" id="createAccount">Add link!</button>
+            </form>
 
-            </ol>
           </div>
-
         </div>
 
         <div class="col-xs-1 col-sm-1 sidebar-offcanvas" id="sidebar">
@@ -101,6 +102,7 @@
     <script src="../js/location.js"></script>
     <script src="../js/weather.js"></script>
     <script src="../js/link-sidebar.js"></script>
+    <script src="../js/user.js"></script>
     <script src="../js/app.js"></script>
   </body>
 </html>

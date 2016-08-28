@@ -10,6 +10,7 @@
   "author": "Michael Mitrakos",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.0",
     "express": "^4.9.8"
   },
   "engines": {
