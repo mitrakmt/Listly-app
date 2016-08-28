@@ -47,8 +47,26 @@
             <form id="createAccountForm" class="form-inline pull-xs-right" onsubmit="return false;">
               <input class="form-control" type="text" id="email-input" placeholder="email@example.com">
               <input class="form-control" type="password" id="password-input" placeholder="Password">
-              <button class="btn btn-outline-success" type="submit" id="createAccount">Add link!</button>
+              <button class="btn btn-outline-success" type="submit" id="createAccount">Sign Up</button>
             </form>
+
+            <br><br>
+
+            <form id="login-form" class="form-inline pull-xs-right" onsubmit="return false;">
+              <input class="form-control" type="text" id="login-email" placeholder="email@example.com">
+              <input class="form-control" type="password" id="login-password" placeholder="Password">
+              <button class="btn btn-outline-success" type="submit" id="login">Login</button>
+            </form>
+
+            <br><br>
+            <!-- Create todo -->
+            <button class="btn btn-outline-success" type="submit" id="postTodo">Create Todo</button>
+
+            <!-- Get todos -->
+            <button class="btn btn-outline-success" type="submit" id="getTodos">My Todos</button>
+
+            <!-- Logout -->
+            <button class="btn btn-outline-success" type="submit" id="logout-user">Logout</button>
 
           </div>
         </div>
