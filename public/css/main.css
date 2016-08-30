@@ -11,13 +11,55 @@ body {
 
 .jumbotron {
   background-color: white;
-  opacity: .9;
+  opacity: 1;
 }
 
 #todo-jumbotron {
   margin-top: 30px;
   height: 335px;
   margin-bottom: 15px;
+  background-color: transparent;
+}
+
+.card {
+  margin-top: -15px;
+  margin-left: -10px;
+  background-color: whitesmoke;
+  opacity: 1;
+}
+
+.register-button {
+  margin-top: 15px;
+}
+
+.register-button button {
+  background: #000;
+  background: -moz-linear-gradient(-45deg,#000 0,#062a64 100%);
+  background: -webkit-linear-gradient(-45deg,#000 0,#062a64 100%);
+  background: linear-gradient(135deg,#000 0,#062a64 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#062a64', GradientType=1 );
+  border-radius: 5px;
+  color: white;
+}
+
+.register-button button:hover {
+  color: #1B988C;
+}
+
+.blue-gradient {
+  background: #000;
+  background: -moz-linear-gradient(-45deg,#000 0,#062a64 100%);
+  background: -webkit-linear-gradient(-45deg,#000 0,#062a64 100%);
+  background: linear-gradient(135deg,#000 0,#062a64 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#062a64', GradientType=1 );
+}
+
+.blue-gradient h3 {
+  text-align: center;
+  color: white;
+  margin-top: -45px;
+  padding: 5px 20px 5px 20px;
+  margin-bottom: 20px;
 }
 
 .vertical-center {
@@ -47,6 +89,19 @@ body {
   color: black;
 }
 
+.sign-up-icon {
+  width: 100%:
+}
+
+.md-form i::before {
+  width: 10px;
+}
+
+.sign-in {
+  margin-left: 10px;
+  padding-bottom: 13px;
+}
+
 .quick-link-text {
   margin-top: 15px;
 }
@@ -63,6 +118,7 @@ body {
 
 .list-group-item.active {
   border-radius: 5px;
+  background-color: #0E2B5C;
 }
 
 .list-group-item:first-child {

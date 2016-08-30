@@ -43,30 +43,93 @@
         <div class="col-xs-16 col-sm-11">
           <div class="jumbotron"  id="todo-jumbotron">
 
-            <!-- Todos -->
-            <form id="createAccountForm" class="form-inline pull-xs-right" onsubmit="return false;">
-              <input class="form-control" type="text" id="email-input" placeholder="email@example.com">
-              <input class="form-control" type="password" id="password-input" placeholder="Password">
-              <button class="btn btn-outline-success" type="submit" id="createAccount">Sign Up</button>
-            </form>
+            <!--Form with header-->
+            <div class="card col-md-6">
+                <div class="card-block">
 
+                    <!--Header-->
+                    <div class="form-header blue-gradient">
+                        <h3> Register</h3>
+                    </div>
+
+                    <!--Body-->
+                    <div class="md-form row">
+                        <i class="fa fa-user prefix col-md-2"></i>
+                        <input type="text" id="name-input" placeholder="Name" class="form-control col-md-10">
+                    </div><br>
+
+                    <div class="md-form row">
+                        <i class="fa fa-envelope prefix col-md-2"></i>
+                        <input type="text" id="email-input" placeholder="Email" class="form-control col-md-10">
+                    </div><br>
+
+                    <div class="md-form row">
+                        <i class="fa fa-lock prefix col-md-2"></i>
+                        <input type="password" id="password-input" placeholder="Password" class="form-control col-md-10">
+                    </div>
+
+                    <div class="text-xs-center row register-button">
+                        <button class="btn btn-indigo" type="submit" id="createAccount">Sign up</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--Form with header-->
+            <div class="card col-md-6 sign-in">
+                <div class="card-block">
+
+                    <!--Header-->
+                    <div class="form-header blue-gradient">
+                        <h3> Sign in</h3>
+                    </div>
+
+                    <!--Body-->
+                    <br>
+                    <div class="md-form row">
+                        <i class="fa fa-envelope prefix col-md-2"></i>
+                        <input type="text" id="login-email" placeholder="Email" class="form-control col-md-10">
+                    </div><br>
+
+                    <div class="md-form row">
+                        <i class="fa fa-lock prefix col-md-2"></i>
+                        <input type="password" id="login-password" placeholder="Password" class="form-control col-md-10">
+                    </div>
+
+                    <br>
+
+                    <div class="text-xs-center row register-button">
+                        <button class="btn btn-indigo" type="submit" id="login">Sign in</button>
+                    </div>
+
+                </div>
+            </div>
+<!--/Form with header-->
+
+            <!-- Todos -->
+            <!-- <form id="createAccountForm" class="form-inline pull-xs-right" onsubmit="return false;">
+              <input class="form-control" type="text" id="email-input" placeholder="email@example.com"><br>
+              <input class="form-control" type="password" id="password-input" placeholder="Password"><br>
+              <button class="btn btn-outline-success" type="submit" id="createAccount">Sign Up</button>
+            </form> -->
+<!--
             <br><br>
 
             <form id="login-form" class="form-inline pull-xs-right" onsubmit="return false;">
               <input class="form-control" type="text" id="login-email" placeholder="email@example.com">
               <input class="form-control" type="password" id="login-password" placeholder="Password">
               <button class="btn btn-outline-success" type="submit" id="login">Login</button>
-            </form>
+            </form> -->
 
             <br><br>
             <!-- Create todo -->
-            <button class="btn btn-outline-success" type="submit" id="postTodo">Create Todo</button>
+            <!-- <button class="btn btn-outline-success" type="submit" id="postTodo">Create Todo</button> -->
 
             <!-- Get todos -->
-            <button class="btn btn-outline-success" type="submit" id="getTodos">My Todos</button>
+            <!-- <button class="btn btn-outline-success" type="submit" id="getTodos">My Todos</button> -->
 
             <!-- Logout -->
-            <button class="btn btn-outline-success" type="submit" id="logout-user">Logout</button>
+            <!-- <button class="btn btn-outline-success" type="submit" id="logout-user">Logout</button> -->
 
           </div>
         </div>
