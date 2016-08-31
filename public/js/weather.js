@@ -5,7 +5,7 @@ var findWeather = function(location) {
             return reject("There was an error in grabbing location");
         }
 
-        var weatherUrl = 'http://api.wunderground.com/api/0a4f6196a6ca6510/conditions/q/' + location.region + '/' + location.city;
+        var weatherUrl = 'http://api.wunderground.com/api/0a4f6196a6ca6510/conditions/q/' + location.region + '/' + location.city + '.json';
 
         var currentTime = moment().format("h");
 
