@@ -95,7 +95,7 @@ body {
 }
 
 .sign-up-icon {
-  width: 100%:
+  width: 100%;
 }
 
 .md-form i::before {
@@ -109,6 +109,10 @@ body {
 
 .quick-link-text {
   margin-top: 15px;
+}
+
+.active-selection {
+  background-color: white;
 }
 
 #sidebar {

@@ -1,10 +1,11 @@
 var findWeather = function(location) {
     return new Promise(function(resolve, reject) {
-        var weatherUrl = 'https://api.forecast.io/forecast/f641b11300cd05cd8d58926332895746/' + location.loc;
 
         if (!location) {
             return reject("There was an error in grabbing location");
         }
+
+        var weatherUrl = 'http://api.wunderground.com/api/0a4f6196a6ca6510/conditions/q/' + location.region + '/' + location.city;
 
         var currentTime = moment().format("h");
 
