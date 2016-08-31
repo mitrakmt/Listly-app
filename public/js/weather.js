@@ -7,7 +7,7 @@ var findWeather = function(location) {
 
         var city = location.city.replace(" ", "_");
 
-        var weatherUrl = 'http://api.wunderground.com/api/0a4f6196a6ca6510/conditions/q/' + location.region + '/' + city + '.json';
+        var weatherUrl = 'https://api.wunderground.com/api/0a4f6196a6ca6510/conditions/q/' + location.region + '/' + city + '.json';
 
         var currentTime = moment().format("H");
         console.log(currentTime);
