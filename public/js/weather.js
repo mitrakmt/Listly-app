@@ -10,10 +10,8 @@ var findWeather = function(location) {
         var weatherUrl = 'https://api.wunderground.com/api/0a4f6196a6ca6510/conditions/q/' + location.region + '/' + city + '.json';
 
         var currentTime = moment().format("H");
-        console.log(currentTime);
 
         $.getJSON(weatherUrl, function(weatherInfo) {
-          console.log(weatherInfo)
             var weatherIcon;
             var current = weatherInfo.current_observation;
             if (current.icon.indexOf("rain") !== -1) {
