@@ -1,3 +1,11 @@
+@import 'https://fonts.googleapis.com/css?family=Sanchez';
+
+.brand-name {
+  font-family: 'Sanchez', serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+
 body {
   color: black;
   background-image: url('https://source.unsplash.com/category/nature/1400x950');
@@ -143,7 +151,6 @@ body {
 .weather-info {
   text-align: center;
   margin-left: 23px;
-  margin-top: -5px;
 }
 
 .weather-info h4 {
