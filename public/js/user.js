@@ -66,7 +66,7 @@ $('#postTodo').on('click', function() {
         success: function(todo) {
             console.log(todo);
         },
-        error: function() {
+        error: function() {d
             console.log("Error posting todo");
         }
     });
