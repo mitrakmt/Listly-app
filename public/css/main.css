@@ -181,4 +181,14 @@ body {
 
 .news-extras {
   float: right;
+  margin-top: -10px;
+}
+
+.uber-text {
+  text-align: center;
+}
+
+.uber-logo {
+  width: 100%;
+  margin-left: -7px;
 }
