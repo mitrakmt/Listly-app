@@ -30,7 +30,7 @@ var findWeather = function(location) {
                 weatherIcon = "fa-sun-o"
             }
 
-            $(".weather").append('<div class="col-md-5 weather-info weather-city"><h5>' + location.city + '</h5></div><div class="col-md-5 weather-info"><h4>' + current.feelslike_f + '°</h4><i class="fa ' + weatherIcon + ' fa-3x"></i><h6 class="weather-summary"><small>' + current.weather + '</small></h6></div>');
+            $(".weather").append('<div class="col-md-5 weather-info weather-city"><h5>' + location.city + '</h5></div><div class="col-md-5 weather-info"><h4>' + current.feelslike_f + '°</h4><i class="fa ' + weatherIcon + ' fa-3x"></i><h6 class="weather-summary"><small class="weather-text">' + current.weather + '</small></h6></div>');
         });
     });
 }

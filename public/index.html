@@ -11,170 +11,181 @@
   </head>
   <body>
 
-    <div class="container">
-      <nav class="navbar navbar-light bg-faded">
-        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header">
-          ☰
-        </button>
-        <div class="collapse navbar-toggleable-xs" id="navbar-header">
-          <a class="navbar-brand brand-name" href="#"><strong>Listly</strong></a>
-          <ul class="nav navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-          </ul>
-          <form id="form" class="form-inline pull-xs-right" onsubmit="return false;">
-            <input class="form-control" type="text" id="urlSubmission" placeholder="yourwebsite.com/text">
-            <button class="btn btn-outline-success" type="submit" onclick="addUrlIcon();">Add link!</button>
-          </form>
-        </div>
-      </nav>
+    <div class="mobileview">
+      <h1 class="md-display-3 mobileview-text">Sorry, listly is only available on desktop</h1>
     </div>
 
-    <div class="container">
+    <span class="normalView">
 
-      <div class="row row-offcanvas row-offcanvas-right">
-        <div class="col-xs-16 col-sm-11">
-          <div class="jumbotron"  id="todo-jumbotron">
-
-            <!--Form with header-->
-            <div class="card col-md-6">
-                <div class="card-block">
-
-                    <!--Header-->
-                    <div class="form-header blue-gradient">
-                        <h3> Register</h3>
-                    </div>
-
-                    <!--Body-->
-                    <div class="md-form row">
-                        <i class="fa fa-user fa-3x prefix col-md-2"></i>
-                        <input type="text" id="name-input" placeholder="Name" class="form-control col-md-10">
-                    </div><br>
-
-                    <div class="md-form row">
-                        <i class="fa fa-envelope fa-2x prefix col-md-2"></i>
-                        <input type="text" id="email-input" placeholder="Email" class="form-control col-md-10">
-                    </div><br>
-
-                    <div class="md-form row">
-                        <i class="fa fa-lock fa-3x prefix col-md-2"></i>
-                        <input type="password" id="password-input" placeholder="Password" class="form-control col-md-10">
-                    </div>
-
-                    <div class="text-xs-center row register-button">
-                        <button class="btn btn-indigo" type="submit" id="createAccount">Sign up</button>
-                    </div>
-
-                </div>
-            </div>
-
-            <!--Form with header-->
-            <div class="card col-md-6 sign-in">
-                <div class="card-block">
-
-                    <!--Header-->
-                    <div class="form-header blue-gradient">
-                        <h3> Sign in</h3>
-                    </div>
-
-                    <!--Body-->
-                    <br><br>
-                    <div class="md-form row">
-                        <i class="fa fa-envelope fa-2x prefix col-md-2"></i>
-                        <input type="text" id="login-email" placeholder="Email" class="form-control col-md-10">
-                    </div><br>
-
-                    <div class="md-form row">
-                        <i class="fa fa-lock fa-3x prefix col-md-2"></i>
-                        <input type="password" id="login-password" placeholder="Password" class="form-control col-md-10">
-                    </div>
-
-                    <div class="text-xs-center row register-button">
-                        <button class="btn btn-indigo" type="submit" id="login">Sign in</button>
-                    </div>
-
-                </div>
-            </div>
-<!--/Form with header-->
-
-            <!-- Todos -->
-            <!-- <form id="createAccountForm" class="form-inline pull-xs-right" onsubmit="return false;">
-              <input class="form-control" type="text" id="email-input" placeholder="email@example.com"><br>
-              <input class="form-control" type="password" id="password-input" placeholder="Password"><br>
-              <button class="btn btn-outline-success" type="submit" id="createAccount">Sign Up</button>
-            </form> -->
-<!--
-            <br><br>
-
-            <form id="login-form" class="form-inline pull-xs-right" onsubmit="return false;">
-              <input class="form-control" type="text" id="login-email" placeholder="email@example.com">
-              <input class="form-control" type="password" id="login-password" placeholder="Password">
-              <button class="btn btn-outline-success" type="submit" id="login">Login</button>
-            </form> -->
-
-            <br><br>
-            <!-- Create todo -->
-            <!-- <button class="btn btn-outline-success" type="submit" id="postTodo">Create Todo</button> -->
-
-            <!-- Get todos -->
-            <!-- <button class="btn btn-outline-success" type="submit" id="getTodos">My Todos</button> -->
-
-            <!-- Logout -->
-            <!-- <button class="btn btn-outline-success" type="submit" id="logout-user">Logout</button> -->
-
+      <div class="container">
+        <nav class="navbar navbar-light bg-faded">
+          <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header">
+            ☰
+          </button>
+          <div class="collapse navbar-toggleable-xs" id="navbar-header">
+            <a class="navbar-brand brand-name" href="#"><strong>Listly</strong></a>
+            <ul class="nav navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+            </ul>
+            <form id="form" class="form-inline pull-xs-right" onsubmit="return false;">
+              <input class="form-control" type="text" id="urlSubmission" placeholder="yourwebsite.com/text">
+              <button class="btn btn-outline-success" type="submit" onclick="addUrlIcon();">Add link!</button>
+            </form>
           </div>
-        </div>
-
-        <div class="col-xs-1 col-sm-1 sidebar-offcanvas" id="sidebar">
-          <div class="list-group" id="fast-link">
-
-          </div>
-        </div>
+        </nav>
       </div>
 
-      <div class="row row-offcanvas row-offcanvas-right">
+      <div class="container">
 
-        <div class="col-xs-8 col-sm-3 bottom-jumbotron">
-          <div class="jumbotron bottom-jumbotron">
+        <div class="row row-offcanvas row-offcanvas-right">
+          <div class="col-xs-16 col-sm-11">
+            <div class="jumbotron"  id="todo-jumbotron">
 
-            <div class="row weather">
-              <!-- Weather will show here -->
+              <!--Form with header-->
+              <div class="card col-md-6">
+                  <div class="card-block">
+
+                      <!--Header-->
+                      <div class="form-header blue-gradient">
+                          <h3> Register</h3>
+                      </div>
+
+                      <!--Body-->
+                      <div class="md-form row">
+                          <i class="fa fa-user fa-3x prefix col-md-2"></i>
+                          <input type="text" id="name-input" placeholder="Name" class="form-control col-md-10">
+                      </div><br>
+
+                      <div class="md-form row">
+                          <i class="fa fa-envelope fa-2x prefix col-md-2"></i>
+                          <input type="text" id="email-input" placeholder="Email" class="form-control col-md-10">
+                      </div><br>
+
+                      <div class="md-form row">
+                          <i class="fa fa-lock fa-3x prefix col-md-2"></i>
+                          <input type="password" id="password-input" placeholder="Password" class="form-control col-md-10">
+                      </div>
+
+                      <div class="text-xs-center row register-button">
+                          <button class="btn btn-indigo" type="submit" id="createAccount">Sign up</button>
+                      </div>
+
+                  </div>
+              </div>
+
+              <!--Form with header-->
+              <div class="card col-md-6 sign-in">
+                  <div class="card-block">
+
+                      <!--Header-->
+                      <div class="form-header blue-gradient">
+                          <h3> Sign in</h3>
+                      </div>
+
+                      <!--Body-->
+                      <br><br>
+                      <div class="md-form row">
+                          <i class="fa fa-envelope fa-2x prefix col-md-2"></i>
+                          <input type="text" id="login-email" placeholder="Email" class="form-control col-md-10">
+                      </div><br>
+
+                      <div class="md-form row">
+                          <i class="fa fa-lock fa-3x prefix col-md-2"></i>
+                          <input type="password" id="login-password" placeholder="Password" class="form-control col-md-10">
+                      </div>
+
+                      <div class="text-xs-center row register-button">
+                          <button class="btn btn-indigo" type="submit" id="login">Sign in</button>
+                      </div>
+
+                  </div>
+              </div>
+  <!--/Form with header-->
+
+              <!-- Todos -->
+              <!-- <form id="createAccountForm" class="form-inline pull-xs-right" onsubmit="return false;">
+                <input class="form-control" type="text" id="email-input" placeholder="email@example.com"><br>
+                <input class="form-control" type="password" id="password-input" placeholder="Password"><br>
+                <button class="btn btn-outline-success" type="submit" id="createAccount">Sign Up</button>
+              </form> -->
+  <!--
+              <br><br>
+
+              <form id="login-form" class="form-inline pull-xs-right" onsubmit="return false;">
+                <input class="form-control" type="text" id="login-email" placeholder="email@example.com">
+                <input class="form-control" type="password" id="login-password" placeholder="Password">
+                <button class="btn btn-outline-success" type="submit" id="login">Login</button>
+              </form> -->
+
+              <br><br>
+              <!-- Create todo -->
+              <!-- <button class="btn btn-outline-success" type="submit" id="postTodo">Create Todo</button> -->
+
+              <!-- Get todos -->
+              <!-- <button class="btn btn-outline-success" type="submit" id="getTodos">My Todos</button> -->
+
+              <!-- Logout -->
+              <!-- <button class="btn btn-outline-success" type="submit" id="logout-user">Logout</button> -->
+
+            </div>
+          </div>
+
+          <div class="col-xs-1 col-sm-1 sidebar-offcanvas" id="sidebar">
+            <div class="list-group" id="fast-link">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-offcanvas row-offcanvas-right">
+
+          <div class="col-xs-8 col-sm-3 bottom-jumbotron">
+            <div class="jumbotron bottom-jumbotron">
+
+              <div class="row weather">
+                <!-- Weather will show here -->
+                <div class="weather-text">
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 bottom-jumbotron">
+            <div class="jumbotron bottom-jumbotron">
+              <h5 class="news-title"></h5>
+              <h5 class="news-text">
+                <!-- Top story shows here -->
+              </h5>
+              <h5 class="news-extras">
+
+              </h5>
             </div>
 
           </div>
-        </div>
 
-        <div class="col-xs-16 col-sm-6 bottom-jumbotron">
-          <div class="jumbotron bottom-jumbotron">
-            <h5 class="news-title"></h5>
-            <h5 class="news-text">
-              <!-- Top story shows here -->
-            </h5>
-            <h5 class="news-extras">
-
-            </h5>
-          </div>
-
-        </div>
-
-        <div class="col-xs-2 bottom-jumbotron">
-          <div class="jumbotron bottom-jumbotron">
-            <h5 class="uber-text">Order Uber</h5>
-            <a href="https://m.uber.com/" target="_blank">
-              <img src="css/images/uber.jpg" class="uber-logo" />
-            </a>
+          <div class="col-xs-2 bottom-jumbotron">
+            <div class="jumbotron bottom-jumbotron">
+              <h5 class="uber-text">Order Uber</h5>
+              <a href="https://m.uber.com/" target="_blank">
+                <img src="css/images/uber.jpg" class="uber-logo" />
+              </a>
+            </div>
           </div>
         </div>
+
       </div>
 
-    </div>
+    </span>
 
     <!-- Latest compiled and minified JavaScript -->
     <script   src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
