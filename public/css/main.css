@@ -126,9 +126,14 @@ body {
   margin-top: 19px;
 }
 
+.disabled {
+  cursor: not-allowed;
+}
+
 .list-group-item {
   border-radius: 5px;
-  margin: 4px;
+  margin: 5px;
+  margin-bottom: 12px;
   width: 60px;
 }
 
@@ -185,11 +190,14 @@ body {
 
 .uber-text {
   text-align: center;
+  font-size: 13px;
+  font-weight: bold;
 }
 
 .uber-logo {
-  width: 100%;
-  margin-left: -7px;
+  width: 85%;
+  margin-left: 2px;
+  margin-bottom: 5px;
 }
 
 .mobileview {
